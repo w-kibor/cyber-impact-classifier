@@ -50,4 +50,76 @@ Security teams often deal with **textual descriptions of incidents** with vague 
 ---
 
 ## 🧪 Results
+ Accuracy: 94.6%
 
+### Top performing classes:
+
+Credential Compromise (F1: 0.98)
+
+Backdoor Access (F1: 0.97)
+
+System Compromise (F1: 0.95)
+
+AI/LLM Privacy Breach (F1: 0.92)
+
+📈 *Weighted Average F1-Score*: **0.95**
+
+## 🚀 How to Use
+1. Clone the repository
+```
+git clone https://github.com/your-username/cyber-impact-classifier.git
+cd cyber-impact-classifier
+```
+2. Install dependencies
+```
+pip install -r requirements.txt
+```
+3. Run the Notebook or Script
+
+If using a Jupyter Notebook:
+```
+# Open and run Cyber_Attack_Impact_Prediction.ipynb
+```
+If using a Python script:
+```
+python train_model.py
+```
+4. Make Predictions
+```
+example = ["SQL injection on admin panel"]
+vector = vectorizer.transform(example)
+prediction = clf.predict(vector)
+print("Predicted Impact Group:", prediction[0])
+
+```
+### 🧰 Prerequisites
+#### Make sure you have the following installed:
+
+Python 3.7+
+
+pip (Python package installer)
+
+#### You can install the required packages using:
+```
+pip install -r requirements.txt
+```
+#### Typical packages you might include in requirements.txt:
+
+pandas
+
+scikit-learn
+
+numpy
+
+matplotlib
+
+seaborn
+
+nltk
+
+#### If you're using Jupyter Notebook or plan to visualize, also add:
+
+jupyter
+
+## 💬 Acknowledgments
+This project was inspired by the real-world challenges of handling high-volume incident reports in cybersecurity environments. Thanks to the MITRE ATT&CK framework and numerous cybersecurity datasets available publicly.
